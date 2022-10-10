@@ -29,7 +29,7 @@ main{
   font-size: 16px;
 }
 .container{
-padding-bottom: 40px;
+padding-bottom: 190px;
 }
 .infogram-embed{
 border: 1px solid #db015c;
@@ -66,7 +66,7 @@ box-shadow: 2px 2px 9px #db015c;
     }
     .infogram-embed{
       margin: auto;
-        width: 280px;
+        width: 300px;
         border: 1px solid #db015c;
         box-shadow: 2px 2px 9px #db015c;
         }
