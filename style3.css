@@ -133,11 +133,14 @@ footer{
         width: 200px;
       }
   }
-  @media (max-width: 1200px) { 
+  @media (min-width: 600px) { 
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0;
+    }
+    .ops{
+
     }
    }
