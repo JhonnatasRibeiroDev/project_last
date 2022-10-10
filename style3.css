@@ -11,7 +11,7 @@ body{
 }
 .logo{
     width: 300px;
-    padding-bottom: 20px;
+    padding-bottom: px;
 }
 main{
     height: 100%;
@@ -22,24 +22,29 @@ main{
 }
 .container{
     padding: 30px;
+    height: 100vh;
 }
+
 .roda-pe{
     padding-top: 30px;
     font-size: 10px;
     color: rgba(255, 255, 255, 0.493);
 }
 .container .ops{
-    height: 400px;
-    max-width: 400px;
+    
     margin: auto;
     background-color: rgba(0, 0, 0, 0.425);
     border: 1px solid #ff004c;
+    border-radius: 50px 0px 50px 0px;
+    padding: 10px;
+    box-shadow: -7px 5px 6px rgba(0, 0, 0, 0.568);
 
 }
 .container .ops{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .container .op-tres{
     
@@ -47,6 +52,23 @@ main{
     display: flex;
     flex-wrap: wrap;
     
+
+}
+.video-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .op-tres-one{
+    display: flex;
+    flex-direction: column;
+}
+.video{
+    padding: 30px;
+}
+.video iframe{
+    width: 300px;
+    height: 200px;
 }
 .container .op-tres a{
     padding: 20px 50px;
@@ -56,6 +78,17 @@ main{
     box-shadow: 2px 2px 10px #ff004c;
     border: 1px solid #ff004c;
     text-decoration: none;
+    transition: 0.1s;
+}
+.container .op-tres a:hover{
+   
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #ff004c96;
+    box-shadow: 2px 2px 10px #070203;
+    border: 1px solid #00000000;
+    text-decoration: none;
 
 }
 footer{
@@ -63,12 +96,31 @@ footer{
 }
 @media (max-width: 599px) 
   {
+    .container .op-tres-one{
+        padding-bottom: 40px;
+    }
+    .container .op-tres a{
+        padding: 20px 80px;
+        margin: 10px 40px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.61);
+        box-shadow: 2px 2px 10px #ff004c;
+        border: 1px solid #ff004c;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+    .video-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     main{
         height: 100%;
         background-image: url('imagens/luz-fundo.png');
         background-position: center;
         background-size: cover;
     }
+   
     .container{
         height: 100vh;
         display: flex;
@@ -76,13 +128,13 @@ footer{
         justify-content: center;
         padding: 0;
     }
+
     .logo{
         width: 200px;
       }
   }
   @media (max-width: 1200px) { 
     .container{
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
